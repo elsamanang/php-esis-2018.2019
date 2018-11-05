@@ -42,6 +42,12 @@
 	label{
 		color: #fff;
 	}
+	select{
+		color: #fff;
+	}
+	option{
+		background-color: rgba(0,14, 120, 0.5);
+	}
 </style>
 <body>
 	<form action="signup.php" method="POST">
@@ -50,7 +56,7 @@
 		<label>Mot de passe : </label><input class="a" type="password" name="mdp" required=""><br><br>
         <label>Confirmez mot de passe : </label><input class="a" type="password" name="mdpc" required=""><br><br>
         <label>E-Mail : </label><input class="a" type="email" name="mail" required=""><br><br>
-        <p>Sex : </p><select name="sex"><option>M</option>
+        <label>Sex : </label><select class="a" name="sex"><option>M</option>
                             <option>F</option>
         </select><br><br>
 		<input class="b" type="submit" value="valider"><br><br>
