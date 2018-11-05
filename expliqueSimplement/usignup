@@ -24,6 +24,20 @@
 		border: none;
 		background-color: transparent;
 		border-bottom: solid #fff;
+        
+	}
+    .b{
+		margin-left: 37%;
+		width: 30%;
+		padding: 2% 2%;
+		border-color: #fff;
+		background-color: #fff;
+		color : rgb(0, 162, 232);
+	}
+	.b:hover{
+		border: solid #fff;
+		background-color: transparent;
+		color: #fff;
 	}
 	label{
 		color: #fff;
@@ -38,8 +52,8 @@
         <label>E-Mail : </label><input class="a" type="email" name="mail" required=""><br><br>
         <p>Sex : </p><select name="sex"><option>M</option>
                             <option>F</option>
-        </select>
-		<input type="submit" value="valider"><br><br>
+        </select><br><br>
+		<input class="b" type="submit" value="valider"><br><br>
 	</form>
 </body>
 </html>
