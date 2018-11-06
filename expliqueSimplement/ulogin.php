@@ -25,16 +25,29 @@
 		background-color: transparent;
 		border-bottom: solid #fff;
 	}
+	.b{
+		margin-left: 37%;
+		width: 30%;
+		padding: 2% 2%;
+		border-color: #fff;
+		background-color: #fff;
+		color : rgb(0, 162, 232);
+	}
+	.b:hover{
+		border: solid #fff;
+		background-color: transparent;
+		color: #fff;
+	}
 	label{
 		color: #fff;
 	}
 </style>
 <body>
-	<form action="login.php" method="POST">
+	<form action="login.phpU" method="POST">
 		<h2>Connectez-Vous</h2>
 		<label>Pseudo : </label><input class="a" type="text" name="pseudo"required=""><br><br>
 		<label>Mot de passe : </label><input class="a" type="password" name="mdp" required=""><br><br>
-		<input type="submit" value="Connexion"><br><br>
+		<input class="b" type="submit" value="Connexion"><br><br>
 	</form>
 </body>
 </html>
