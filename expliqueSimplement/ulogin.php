@@ -43,7 +43,7 @@
 	}
 </style>
 <body>
-	<form action="login.phpU" method="POST">
+	<form action="login.php" method="POST">
 		<h2>Connectez-Vous</h2>
 		<label>Pseudo : </label><input class="a" type="text" name="pseudo"required=""><br><br>
 		<label>Mot de passe : </label><input class="a" type="password" name="mdp" required=""><br><br>
