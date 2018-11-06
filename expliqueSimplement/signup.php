@@ -9,7 +9,7 @@ if (!empty($pseudo) && !empty($cpwd) && !empty($pwd) && !empty($mail) && !empty(
 	if ($pwd == $cpwd) {
 		try {
             $pdo_options[PDO:: ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-            $bdd = new PDO('mysql:host=localhost; dbname=ExS', 'root', '', $pdo_options);
+            $bdd = new PDO('mysql:host=localhost; dbname=exs', 'root', '', $pdo_options);
             $req = $bdd->prepare('INSERT INTO user(pseudo, pwd, sex, mail) VALUES (:pseudo, :pwd, :sex, :mail)');
             $req->execute(array(
                 'pseudo' =>$pseudo ,
