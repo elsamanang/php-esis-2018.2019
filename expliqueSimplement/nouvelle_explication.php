@@ -13,10 +13,8 @@
     }
     else
     {
-        $db = new PDO('mysql:host=localhost; dbname=explique_simplement',
-        'root', '');
-        $str = 'INSERT INTO explication VALUES(null, :id_sujet, :contenu,
-        :date_publication)';
+        $db = new PDO('mysql:host=localhost; dbname=explique_simplement','root', '');
+        $str = 'INSERT INTO explication VALUES(null, :id_sujet, :contenu,:date_publication)';
         $req = $db->prepare($str);
         $val = array(
         'id_sujet' => $id_sujet,
@@ -28,3 +26,17 @@
         echo '<a href="sujet.php?id='.$id_sujet.'">Retour au sujet</a>';
     }
 ?>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
